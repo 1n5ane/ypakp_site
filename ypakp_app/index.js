@@ -3,7 +3,7 @@ const app = express()
 const port = 3000
 app.use(express.static(__dirname + '/'));
 
-app.get('/index.php', (req, res) => {
+app.get('/index.*', (req, res) => {
   res.sendFile(__dirname+'/index.html');
 
 })
