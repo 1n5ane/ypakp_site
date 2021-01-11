@@ -25,41 +25,69 @@
 
 </head>
 
-<body style="background-color: Lavender;">
+<body style="background-color: Lavender;overflow-x:hidden">
   <!-- Header Start -->
   <!-- top blue container -->
-  <div class="d-flex" style="background-color:DodgerBLue">
+  <div class="d-flex" style="background-color:DodgerBlue;padding:auto;">
 
-    <div class="d-inline-flex p-3 col-lg-3" style="background-color: green;justify-content: center;">
+
+    <div class="d-inline-flex p-3 col-lg-3" style="background-color: transparent;justify-content: center;">
+
       <div class"col-bg" style="padding:auto;text-align:center;background-color: transparent;margin-right: 10px;">
-        <a href="index.php">
+        <a href="index.php" class="hover_underline_white" style="color:white">
           <img src="images/home.svg" alt="Home Button" height="38" class="icon_button" style="margin-top: 1px;margin-bottom: 1px;border: solid black;"/>
-          <br><font color = "#FFFFFF">Αρχική</font></br>
+          <br>
+            <p style="color:#FFFFFF;">Αρχική</p>
         </a>
       </div>
 
       <div class="col-bg" style="padding: auto;text-align:center;background-color: transparent;">
-        <a href="index.php">
+        <a href="index.php" class="hover_underline_white" style="color:white">
           <img src="images/telephone-fill.png" alt="Contact Button" height="38" class="icon_button" style="margin-top: 1px;margin-bottom: 1px;border: solid black;"</img>
-          <br><font color = "#FFFFFF">Επικοινωνία</font></br>
+          <br>
+          <font color = "#FFFFFF">Επικοινωνία</font>
         </a>
       </div>
+
     </div>
 
-    <div class="d-inline-flex p-3 col-lg-6" style="background-color:white; justify-content: center;">
+    <div class="d-inline-flex p-3 col-lg-6" style="background-color:DodgerBlue; justify-content: center;">
+        <p class="d-none d-sm-block align-self-end" style="margin-right:25px;color:white">
+          ΕΛΛΗΝΙΚΗ
+        </p>
 
         <a href="index.php">
-          <img src="images/ethnoshmo.png" alt="Ethnoshmo Button" height="85" width="85";style="margin-top: 1px;margin-bottom: 0px;"</img>
+          <img src="images/ethnoshmo.png" alt="Ethnoshmo Button" height="95" width="125" style="margin-top: -15px;background-color:transparent;margin-bottom: 10px;"</img>
         </a>
+        <p class="d-none d-sm-block align-self-end" style="margin-left:25px;color:white">
+          ΔΗΜΟΚΡΑΤΙΑ
+        </p>
+
+
     </div>
-    <div class="d-inline-flex p-3 col-lg-3" style="background-color: green;justify-content: center;padding-left: 0px;">
+
+    <div class="d-inline-flex p-3 col-lg-3" style="background-color: transparent;justify-content: center;padding-left: 0px;">
       <div class"col-bg" style="padding:auto;text-align:center;background-color: transparent;margin-right: 10px;">
-        <a href="index.php">
-          <img src="images/globe.svg" alt="Language Button" height="38" class="icon_button" style="margin-top: 1px;margin-bottom: 1px;border: solid black;"/>
-          <br><font color = "#FFFFFF">Αρχική</font></br>
-        </a>
+
+        <img src="images/globe.svg" alt="Language Button" height="38" style="margin-top: 0px;margin-bottom: 2px;"/>
+        <br>
+        <div class="form-group">
+          <select class="form-control" id="LanguageControlSelect" style="height: 30px;">
+            <option>ΕΛ</option>
+            <option>EN</option>
+            <option>DE</option>
+            <option>FR</option>
+          </select>
+        </div>
+
       </div>
     </div>
+
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-lg-12" style="background-color:DodgerBlue;text-align:center;margin-top: -25px;padding-bottom: 0px;">
+      <font size=6 color="#FFFFFF">&ensp;&ensp;ΥΠΟΥΡΓΕΙΟ ΕΡΓΑΣΙΑΣ ΚΑΙ ΚΟΙΝΩΝΙΚΩΝ ΥΠΟΘΕΣΕΩΝ</font>
     </div>
   </div>
 
@@ -74,7 +102,7 @@
   <!-- Header End -->
 
 
-  <div class="containter-fluid">
+  <div class="containter">
     <div class="row">
 
       <div class="col-lg-3 text-center">

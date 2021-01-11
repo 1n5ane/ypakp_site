@@ -2,6 +2,10 @@
 ** The Header Media Queries **
 ** Tweak as per your needs **
 */
+.hover_underline_white:hover {
+  text-decoration:underline white;
+}
+
 
 ul {
     list-style-type: none;
