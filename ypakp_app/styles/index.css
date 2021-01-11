@@ -3,6 +3,29 @@
 ** Tweak as per your needs **
 */
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
 .top_container {
   background-color:DodgerBlue;
   padding: auto;
@@ -10,12 +33,10 @@
 
 .icon_button:hover {
   opacity: 1;
-  border: solid black;
-  border-radius: 15px;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   box-sizing: border-box;
   background-color: LightSalmon;
 }
+
 
 
 .brand {
