@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <title>Υπουργείο Εργασίας & Κοινωνικών Υποθέσεων</title>
+  <title>Υπουργείο Εργασίας & Κοινωνικών ΥΠοθέσεων</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="styles/reset.min.css" />
   <link rel="stylesheet" href="styles/style.css" />
-  <link rel="stylesheet" href="styles/index.css" />
+  <link rel="stylesheet" href="styles/master.css" />
 
   <!-- katevase ta -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -25,144 +24,178 @@
 
 </head>
 
-<body style="background-color: Lavender;overflow-x:hidden">
+<body style="overflow-x:hidden;background-color:cornsilk;">
   <!-- Header Start -->
-  <!-- top blue container -->
-  <div class="d-flex" style="background-color:DodgerBlue;padding:auto;">
+  <header class="site-header">
+    <!-- TOP HEADER WRAPPER -->
+    <div class="site-header__top">
+      <!-- TOP BLUE HEADER START -->
+    	<div class="d-flex" style="background-color:DodgerBlue;padding:auto;">
 
 
-    <div class="d-inline-flex p-3 col-lg-3" style="background-color: transparent;justify-content: center;">
+        <div class="d-inline-flex p-3 col-lg-3" style="background-color: transparent;justify-content: center;">
+          <!-- ARXIKH BUTTON -->
+          <div class"col-bg" style="padding:auto;text-align:center;background-color: transparent;margin-right: 10px;">
 
-      <div class"col-bg" style="padding:auto;text-align:center;background-color: transparent;margin-right: 10px;">
-        <a href="index.php" class="hover_underline_white" style="color:white">
-          <img src="images/home.svg" alt="Home Button" height="38" class="icon_button" style="margin-top: 1px;margin-bottom: 1px;border: solid black;"/>
-          <br>
-            <p style="color:#FFFFFF;">Αρχική</p>
-        </a>
-      </div>
+            <a href="index.php" class="hover_underline_white" style="color:white">
+              <img src="images/home.svg" alt="Home Button" height="38" class="icon_button" style="margin-top: 1px;margin-bottom: 1px;border: solid black;"/>
+              <br>
+              <p style="color:#FFFFFF;">Αρχική</p>
+            </a>
 
-      <div class="col-bg" style="padding: auto;text-align:center;background-color: transparent;">
-        <a href="index.php" class="hover_underline_white" style="color:white">
-          <img src="images/telephone-fill.png" alt="Contact Button" height="38" class="icon_button" style="margin-top: 1px;margin-bottom: 1px;border: solid black;"</img>
-          <br>
-          <font color = "#FFFFFF">Επικοινωνία</font>
-        </a>
-      </div>
+          </div>
+          <!-- EPIKOINWNIA BUTTON -->
+          <div class="col-bg" style="padding: auto;text-align:center;background-color: transparent;">
+            <a href="index.php" class="hover_underline_white" style="color:white">
+              <img src="images/call.svg" alt="Contact Button" height="38" class="icon_button" style="margin-top: 1px;margin-bottom: 1px;border: solid black;"</img>
+              <br>
+              <font color = "#FFFFFF">Επικοινωνία</font>
+            </a>
+          </div>
 
-    </div>
+        </div>
+      <!-- ETHNOSHMO -->
+        <div class="d-inline-flex p-3 col-lg-6" style="background-color:transparent; justify-content: center;">
+          <p class="d-none d-sm-block align-self-end" style="margin-right:25px;color:white">
+            ΕΛΛΗΝΙΚΗ
+          </p>
 
-    <div class="d-inline-flex p-3 col-lg-6" style="background-color:DodgerBlue; justify-content: center;">
-        <p class="d-none d-sm-block align-self-end" style="margin-right:25px;color:white">
-          ΕΛΛΗΝΙΚΗ
-        </p>
-
-        <a href="index.php">
-          <img src="images/ethnoshmo.png" alt="Ethnoshmo Button" height="95" width="125" style="margin-top: -15px;background-color:transparent;margin-bottom: 10px;"</img>
-        </a>
-        <p class="d-none d-sm-block align-self-end" style="margin-left:25px;color:white">
-          ΔΗΜΟΚΡΑΤΙΑ
-        </p>
+          <a href="index.php">
+            <img src="images/ethnoshmo.png" alt="Ethnoshmo Button" height="95" width="125" style="margin-top: -15px;background-color:transparent;margin-bottom: 10px;"</img>
+          </a>
+          <p class="d-none d-sm-block align-self-end" style="margin-left:25px;color:white">
+            ΔΗΜΟΚΡΑΤΙΑ
+          </p>
 
 
-    </div>
+        </div>
+      <!-- LANGUAGE DROPDOWN AND LOGO -->
+        <div class="d-inline-flex p-3 col-lg-3" style="background-color:transparent;justify-content: center;padding-left: 0px;">
+          <div class"col-bg" style="padding:auto;text-align:center;background-color: transparent;margin-right: 10px;">
 
-    <div class="d-inline-flex p-3 col-lg-3" style="background-color: transparent;justify-content: center;padding-left: 0px;">
-      <div class"col-bg" style="padding:auto;text-align:center;background-color: transparent;margin-right: 10px;">
+            <img src="images/globe.svg" alt="Language Button" height="38" style="margin-top: 0px;margin-bottom: 2px;"/>
+            <br>
+            <div class="form-group">
+              <select class="form-control" id="LanguageControlSelect" style="height: 35px;">
+                <option>ΕΛ</option>
+                <option>EN</option>
+                <option>DE</option>
+                <option>FR</option>
+              </select>
+            </div>
 
-        <img src="images/globe.svg" alt="Language Button" height="38" style="margin-top: 0px;margin-bottom: 2px;"/>
-        <br>
-        <div class="form-group">
-          <select class="form-control" id="LanguageControlSelect" style="height: 30px;">
-            <option>ΕΛ</option>
-            <option>EN</option>
-            <option>DE</option>
-            <option>FR</option>
-          </select>
+          </div>
         </div>
 
+    </div>
+    <!-- TOP BLUE HEADER END -->
+    <!--GRAMATA YPOURGEIO ERGASIA KAI KOINWNIKWN YPOTHESEWN -->
+    <div class="row justify-content-center">
+      <div class="col-lg-12" style="background-color:DodgerBlue;text-align:center;margin-top: -25px;padding-bottom: 0px;">
+        <font size=6 color="#FFFFFF">&ensp;&ensp;ΥΠΟΥΡΓΕΙΟ ΕΡΓΑΣΙΑΣ ΚΑΙ ΚΟΙΝΩΝΙΚΩΝ ΥΠΟΘΕΣΕΩΝ</font>
+      </div>
+
+    </div>
+    <!-- TOP HEADER WRAPPER END -->
+  </div>
+  <div class="justify-content-center" style="background-color:DodgerBlue;margin-bottom:0px">
+    <div class="site-header__bottom">
+      <div class="wrapper site-header__wrapper justify-content-center">
+
+        <div class="site-header__middle">
+          <nav class="nav">
+            <div class="nav__wrapper">
+              <li class="nav__item d-none d-lg-block"><a href="index.php" class="hover_underline_white" style="color:white;border-left:solid black;border-width:thin">Αρχική</a></li>
+
+              <li class="nav__item dropdown">
+                <a class="nav-link dropdown-toggle" style="color:white;" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Εργασιακά
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" style="border:none" href="#">Action</a>
+                  <a class="dropdown-item" style="border:none" href="#">Another action</a>
+                  <a class="dropdown-item" style="border:none" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav__item dropdown">
+                <a class="nav-link dropdown-toggle" style="color:white;" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Υπουργείο
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" style="border:none" href="#">Action</a>
+                  <a class="dropdown-item" style="border:none" href="#">Another action</a>
+                  <a class="dropdown-item" style="border:none" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav__item dropdown">
+                <a class="nav-link dropdown-toggle hover_underline_white" style="color:white;" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Άλλες Επιλογές
+                </a>
+                <div class="dropdown-menu" style="margin-top:0px;"aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" style="border:none" href="#">Action</a>
+                  <a class="dropdown-item" style="border:none" href="#">Another action</a>
+                  <a class="dropdown-item" style="border:none" href="#">Something else here</a>
+                </div>
+              </li>
+            </div>
+          </nav>
+        </div>
       </div>
     </div>
-
   </div>
-
-  <div class="row justify-content-center">
-    <div class="col-lg-12" style="background-color:DodgerBlue;text-align:center;margin-top: -25px;padding-bottom: 0px;">
-      <font size=6 color="#FFFFFF">&ensp;&ensp;ΥΠΟΥΡΓΕΙΟ ΕΡΓΑΣΙΑΣ ΚΑΙ ΚΟΙΝΩΝΙΚΩΝ ΥΠΟΘΕΣΕΩΝ</font>
-    </div>
-  </div>
-
-  <div class="container-fluid" style="justify-content:center;background-color:Grey;padding: auto">
-    <ul>
-      <li><a class="active" href="#">Αρχική</a></li>
-      <li><a href="#">Εργασιακά</a></li>
-      <li><a href="#">Υπουργείο</a></li>
-      <li><a href="#">Άλλες Επιλογές</a></li>
-    </ul>
-  </div>
+  </header>
   <!-- Header End -->
 
 
-  <div class="containter">
+  <div class="containter-fluid">
     <div class="row">
 
-      <div class="col-lg-3 text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center border border-dark p-0">
-            <h2 class="left-banner-title"> ERGODOTES </h2>
-            <div class="col-lg-8 mx-auto text-center border border-dark p-0">
-              <h4 class="left-banner-innertitle"> DILWSEIS </h4>
+        <div id="accordion" class="col align-items-center" >
+
+          <div class="card text-center" style="border:none">
+            <div class="card-header" style="background-color:DodgerBlue;margin-left:0px;">
+              <a class="card-link" data-toggle="collapse" href="#collapseOne">
+               <span class="hover_underline_white text-white">ΕΡΓΑΛΕΙΑ ΚΑΙ ΔΗΛΩΣΕΙΣ ΓΙΑ <b>ΕΡΓΟΔΟΤΕΣ</b></span>
+              </a>
             </div>
-            <div class="col-lg-8 mx-auto text-center border border-dark p-0">
-              <a class="d-block" href="#">SYMVASEIS ERGASIAS</a>
-              <a class="d-block" href="#">THLEERGASIA</a>
-            </div>
-
-
-
-            <div class="col-lg-8 mx-auto text-center border border-dark p-0">
-              <h4 class="left-banner-innertitle"> ERGALEIA </h4>
-            </div>
-            <div class="col-lg-8 mx-auto text-center border border-dark p-0">
-              <a class="d-block" href="#">SYMVASEIS ERGASIAS</a>
-              <a class="d-block" href="#">THLEERGASIA</a>
-            </div>
-
-          </div>
-
-
-          <div class="col-lg-8 mx-auto text-center border border-dark p-0">
-            <h2 class="left-banner-title"> ERGAZOMENOI </h2>
-            <div class="col-lg-8 mx-auto text-center border border-dark p-0">
-              <h4 class="left-banner-innertitle"> DILWSEIS </h4>
-            </div>
-            <div class="col-lg-8 mx-auto text-center border border-dark p-0">
-              <a class="d-block" href="#">SYMVASEIS ERGASIAS</a>
-              <a class="d-block" href="#">THLEERGASIA</a>
-            </div>
-
-
-
-            <div class="col-lg-8 mx-auto text-center border border-dark p-0">
-              <h4 class="left-banner-innertitle"> ERGALEIA </h4>
-            </div>
-            <div class="col-lg-8 mx-auto text-center border border-dark p-0">
-              <a class="d-block" href="#">SYMVASEIS ERGASIAS</a>
-              <a class="d-block" href="#">THLEERGASIA</a>
+            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+              <div class="card-body">
+               Lorem ipsum..
+              </div>
             </div>
           </div>
 
-
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div><div class="row">
-           <div class="col-lg-8 mx-auto ">
-             <a class="index-banner bg-danger text-white" href="#">ODIGIES KAI METRA PROLHPSHS STOUS ERGASIAKOUS
-               XWROUS</a>
+         <div class="card text-center" style="border:none">
+           <div class="card-header" style="background-color:DodgerBlue;margin-left:0px;">
+             <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+               <span class="hover_underline_white text-white">ΕΡΓΑΛΕΙΑ ΚΑΙ ΔΗΛΩΣΕΙΣ ΓΙΑ <b>ΕΡΓΑΖΟΜΕΝΟΥΣ</b></span>
+             </a>
            </div>
-           <div class="col-lg-8 mx-auto">
-             <a class="index-banner bg-primary text-white" href="#">THELETE NA METAVBEITE STO UPOYRGEIO? KLEISTE
-               E-RANTEVOU</a>
+           <div id="collapseTwo" class="collapse" data-parent="#accordion">
+             <div class="card-body">
+               Lorem ipsum..
+             </div>
+           </div>
+         </div>
+
+       </div>
+
+
+      <div class="col-lg-6">
+        <div>
+          <div class="row">
+            <div class="col-lg-8 mx-auto ">
+              <a class="index-banner bg-danger text-white" href="#">ODIGIES KAI METRA PROLHPSHS STOUS ERGASIAKOUS
+               XWROUS
+             </a>
+           </div>
+            <div class="col-lg-8 mx-auto">
+              <a class="index-banner bg-primary text-white" href="#">THELETE NA METAVBEITE STO UPOYRGEIO? KLEISTE
+               E-RANTEVOU
+             </a>
            </div>
          </div>
          <div class="col-lg-12 mx-auto">
@@ -192,9 +225,9 @@
            <!-- <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"> -->
 
          </div>
-       </div>
+        </div>
       </div>
-      <div class="col-lg-3">
+      <div class="col-lg-3" style="background-color:purple">
 
         asdasdas
       </div>
@@ -208,60 +241,63 @@
   <!-- Footer -->
   <footer class="bg-light text-center text-lg-start">
     <!-- Grid container -->
-    <div class="container p-4">
+    <div class="d-flex p-4 justify-content-start" style="background-color:midnightblue">
       <!--Grid row-->
       <div class="row">
         <!--Grid column-->
-        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Footer Content</h5>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase" style="color:white">Contact</h5>
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-            voluptatem veniam, est atque cumque eum delectus sint!
-          </p>
+          <div class="row" style="text-align:center;color:white">
+            <div class="col-2"><img src="images/call.svg" width ="30px" height ="30px"></div>
+            <div class="col" style="text-align:left">210XXXXXXX</div>
+            <div class="w-100"></div>
+            <div class="col-2"><img src="images/location.svg" width ="30px" height ="30px"></div>
+            <div class="col" style="text-align:left">ΔΙΕΥΘΥΝΣΗ</div>
+            <div class="w-100"></div>
+            <div class="col-2" ><img src="images/mail.svg" width ="30px" height ="30px"></div>
+            <div class="col" style="text-align:left">EMAIL</div>
+
+          </div>
+        </div>
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="color:white">
+          <h5 class="text-uppercase">TIMELINE</h5>
+          <div class="col-lg-8 mx-auto text-center border border-white p-0">
+            9.00 - 17.00
+            <br>
+            18.00 - 20.00
+          </div>
+        </div>
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase" style="color:white">EPITHEORISI ERGASIAS</h5>
+
+          <div class="row" style="text-align:center;color:white">
+            <div class="col-2"><img src="images/call.svg" width ="30px" height ="30px"></div>
+            <div class="col" style="text-align:left;">210XXXXXXX</div>
+            <div class="w-100"></div>
+            <div class="col-2" ><img src="images/mail.svg" width ="30px" height ="30px"></div>
+            <div class="col" style="text-align:left">EMAIL</div>
+          </div>
         </div>
         <!--Grid column-->
 
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
+          <h5 class="text-uppercase mb-0" style="color:white">EPISKEFTEITE AKOMA</h5>
 
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="#!" class="text-dark">Link 1</a>
-            </li>
-            <li>
-              <a href="#!" class="text-dark">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" class="text-dark">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" class="text-dark">Link 4</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
+          <div class="row" style="text-align:center;color:white">
+            <div class="col-2"><img src="images/logo-facebook.svg" width ="30px" height ="30px"></div>
+            <div class="col" style="text-align:left;">FACEBOOK</div>
+            <div class="w-100"></div>
+            <div class="col-2"><img src="images/logo-youtube.svg" width ="30px" height ="30px"></div>
+            <div class="col" style="text-align:left;">YOUTUBE</div>
+            <div class="w-100"></div>
+            <div class="col-2"><img src="images/logo-twitter.svg" width ="30px" height ="30px"></div>
+            <div class="col" style="text-align:left;">TWITTER</div>
 
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-0">Links</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!" class="text-dark">Link 1</a>
-            </li>
-            <li>
-              <a href="#!" class="text-dark">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" class="text-dark">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" class="text-dark">Link 4</a>
-            </li>
-          </ul>
+          </div>
         </div>
         <!--Grid column-->
       </div>
@@ -270,14 +306,12 @@
     <!-- Grid container -->
 
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2020 Copyright:
-      <a class="text-dark" href="public/login.html">MDBootstrap.com</a>
+    <div class="text-center p-3" style="background-color:DodgerBlue;color:white">
+      Eλληνική Δημοκρατία - Υπουργείο Εργασίας και Κοινωνικών Υποθέσεων
     </div>
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
-  <script src="master.js"></script>
+  <script src="js/master.js"></script>
 </body>
-
 </html>

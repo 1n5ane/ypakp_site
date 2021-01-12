@@ -1,7 +1,23 @@
-/* 
+/*
 ** The Header Media Queries **
 ** Tweak as per your needs **
 */
+
+.card-header a{
+  color:white;
+  text-align:center;
+}
+
+
+.hover_underline_white:hover {
+  text-decoration:underline white;
+}
+
+.icon_button:hover {
+  opacity: 1;
+  box-sizing: border-box;
+  background-color: LightSalmon;
+}
 .brand {
   font-weight: bold;
   font-size: 27px;
@@ -25,7 +41,18 @@
 
 .site-header__bottom {
   position: relative;
-  background-color: #c7f2ff;
+  background-color: midnightblue;
+  border-radius: 25px 25px 0px 0px;
+}
+#accordion{
+  padding-left:30px;
+  padding-top:15px;
+}
+@media (max-width: 1000px){
+    #accordion{
+        padding-left:0px;
+        padding-top:0px;
+    }
 }
 
 @media (max-width: 939px) {
@@ -63,7 +90,9 @@
 .nav {
   margin-left: 1rem;
   margin-right: 1rem;
+
 }
+
 
 @media (min-width: 940px) {
   .nav__wrapper {
@@ -73,16 +102,9 @@
 
 @media (max-width: 939px) {
   .nav__wrapper {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    z-index: -1;
-    background-color: #d9f0f7;
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
   }
 
   .nav__wrapper.active {
@@ -92,9 +114,25 @@
   }
 }
 
+.my_dropdown_style{
+  background-color: blue;
+}
+
+.nav__item a:hover{
+  background-color:black
+}
+.nav__item a:focus{
+  background-color:black
+}
+
 .nav__item a {
-  display: block;
-  padding: 1.5rem 1.25rem;
+  font-size: 19px;
+  display: inline;
+  margin: 0px;
+  padding: 11px 1rem;
+  border-right:solid black;
+  border-width:thin;
+  transition:  1s ease 0s;
 }
 
 .nav__item svg {
@@ -102,6 +140,7 @@
   vertical-align: middle;
   width: 28px;
   height: 28px;
+
   margin-right: 1rem;
 }
 
@@ -217,12 +256,11 @@
 }
 
 .left-banner-title{
-  background-color:#8ab6c3;
+  background-color:cadetblue;
   margin:0px;
 }
 
 .left-banner-innertitle{
-  background-color:#c7f2ff;
+  background-color:Ivory;
   margin:0px;
 }
-
