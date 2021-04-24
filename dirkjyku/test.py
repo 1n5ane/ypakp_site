@@ -1,2 +1,0 @@
-def sasao():
-    println("kcjcsd")
